@@ -9,7 +9,7 @@ mongoose.set('strictQuery',true)
 
 const connect = async ()=>{
 try {
-    await mongoose.connect('process.env.MONGO');
+    await mongoose.connect('mongodb+srv://VaiS:<vais123>@cluster0.ssaaftr.mongodb.net/?retryWrites=true&w=majority');
   console.log("Connected to mongoDB!")  
 } catch (error) {
     console.log(error);
